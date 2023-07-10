@@ -1,0 +1,76 @@
+Tp4:Ejercicio 1.sql
+Create table alumnos
+(
+cod_matricula int primary key not null,
+nombre   varchar(45) not null,
+dni  int not null,
+fecha_nac  date ,
+email  varchar(25)
+);
+create table curso
+(
+cod_curso int primary key,
+nombre varchar(45)
+);
+
+create table Profesor
+(
+profesor_id int primary key,
+ nombre  varchar(45) not null, 
+ especialidad varchar(45), 
+ email varchar(45) not null
+);
+Ejercicio2.sql
+create table pais
+(
+pais_id  int primary key,
+ nombre_pais varchar(45)
+);
+create table PROVINCIA 
+(provincia_id int primary key,
+ nombre_provincia varchar(45)
+ );
+ create table LOCALIDAD
+ (codigo_localidad int primary key,
+ nombre  varchar(45),
+ codigo_postal varchar(45)
+ );
+ create table EMPLEADO 
+ (
+ empleado_id int primary key , 
+ dni int not null,
+ nombre varchar(45), 
+ telefono  int, 
+ email  varchar(45), 
+ fecha_alta date not null
+ );
+Datos ingresados en las tabla1:
+insert into curso values('123','Desarrollo web');
+insert into curso values('134','Diseño grafico');
+insert into curso values('145','python');
+insert into curso values('156','Ingles');
+insert into alumnos values('234','Maria Laura','94678223','2000-10-14','maria@gmail.com');
+insert into alumnos values('245','Jose Luques','89564321','2001-09-18','joselu@gmail.com');
+insert into alumnos values('256','Lautaro Davila','76543218','2000-03-21','lautidav@gmail.com');
+insert into alumnos values('267','Yamila Katerin','321456783','2003-11-01','yami@gmail.com');
+insert into profesor values('345','Florencia Britez','Desarrollo web','flor@gmail.com');
+insert into profesor values('321','Fernando Almiron','Diseño Grafico','ferna@gmail.com');
+insert into profesor values('367','Jorge Luque','python','jorge@gmail.com');
+insert into profesor values('389','Lucio Esquivel','Ingles','esqui@gmail.com');
+Tabla 2:
+insert into pais values ('032','Argentina');
+insert into pais values ('036','Australia');
+insert into pais values ('124','Canada');
+insert into pais values ('192','Cuba');
+insert into provincia values('133','Misiones');
+insert into provincia values('137','Sydney');
+insert into provincia values('125','Alberta');
+insert into provincia values('193','Camaguey');
+insert into localidad values ('122','Puerto Esperanza','4400');
+insert into localidad values ('132','Brisbane','414');
+insert into localidad values ('155','Edmonton','1313');
+insert into localidad values ('154','Camaguey','6789');
+insert into empleado values('101','94558462','Jose Perez','376411234','perez@gmail.com','2022-03-12');
+insert into empleado values('262','95467892','Ruben Aquino','376455321','aquino@gmail.com','2017-07-03');
+insert into empleado values('484','89654367','Rubio Peralta','376543255','rubi@gmail.com','2015-04-05');
+insert into empleado values('015','98654213','Petros Alvares','376412356','petro@gmail.com','2023-01-20');
