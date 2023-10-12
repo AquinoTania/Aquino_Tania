@@ -1,1 +1,11 @@
-
+use tp7;
+create table persona(
+dni INT Primary Key,
+ nombre VARCHAR(30) NOT NULL,
+ apellido VARCHAR(30) NOT NULL
+);
+create table usuario(
+mail VARCHAR(40) Primary Key,
+ nickname VARCHAR(20) NOT NULL,
+ password VARCHAR(20) NOT NULL
+);
